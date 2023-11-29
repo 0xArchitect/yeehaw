@@ -18,7 +18,7 @@ export async function GET(request) {
       <meta property="og:description" content="YEEHAW" />
       <meta property="og:image" content="${imageLink}" />
 
-      <meta property="twitter:card" content="YEEHAW}" />
+      <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:title" content="YEEHAW" />
       <meta property="twitter:description" content="YEEHAW"/>
       <meta property="twitter:image" content="${imageLink}" />
