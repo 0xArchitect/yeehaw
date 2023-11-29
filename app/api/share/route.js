@@ -12,15 +12,15 @@ export async function GET(request) {
 
   const html = `<html>
   <head>
-      <meta property="title" content="" />
+      <meta property="title" content="YEEHAW" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="" />
-      <meta property="og:description" content="}" />
+      <meta property="og:title" content="YEEHAW" />
+      <meta property="og:description" content="YEEHAW" />
       <meta property="og:image" content="${imageLink}" />
 
       <meta property="twitter:card" content="${imageLink}" />
-      <meta property="twitter:title" content="" />
-      <meta property="twitter:description" content=""/>
+      <meta property="twitter:title" content="YEEHAW" />
+      <meta property="twitter:description" content="YEEHAW"/>
       <meta property="twitter:image" content="${imageLink}" />
 
       <script>
