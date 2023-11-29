@@ -9,7 +9,8 @@ export async function GET(request) {
   const v5 = searchParams.get('v5')
   const textBase64 = encodeURIComponent(`${v4}X + ${v5} ETH`)
   const imageLink = `https://ik.imagekit.io/gjbjze6w2/gained.png?tr=l-text,i-${v1},ly-1245,lx-1570,ff-OutlastSlab.ttf,fs-40,l-end:l-text,i-${v2},ly-1300,lx-1600,ff-OutlastSlab.ttf,fs-40,l-end:l-text,i-${v3}%,fs-120,lx-1350,ly-700,ff-OutlastSlab.ttf,l-end:l-text,i-${textBase64},ly-850,lx-1280,ff-OutlastSlab.ttf,fs-60,l-end`
-
+  //make api call to get image
+  await fetch(imageLink)
   const html = `<html>
   <head>
       <meta property="title" content="YEEHAW" />
