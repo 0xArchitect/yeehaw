@@ -8,7 +8,7 @@ export async function GET(request) {
   const v4 = searchParams.get('v4')
   const v5 = searchParams.get('v5')
   const wallet = searchParams.get('wallet');
-  const walletID = `${wallet.substring(0,3)}_${wallet.substring(-(wallet.length-3), -(wallet.length-1))}`
+  const walletID = `${wallet.substring(0,3)}_${wallet.substring((wallet.length-3), (wallet.length-1))}`
   const textBase64 = encodeURIComponent(`${v4}X + ${v5} ETH`)
 //   :l-text,i-${walletID},ly-60,bg-ffffff,lx-1355,co-383838,ff-OutlastSlab.ttf,fs-60,l-end
 // 
