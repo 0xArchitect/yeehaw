@@ -52,11 +52,11 @@ export default function Box(){
     function getTweetmsg(){
 
         if(bought == 0){
-            const tweetmsg = "https://yeehaw-rose.vercel.app/api/share?v1=0"+encodeURIComponent('&')+"v2=0"+encodeURIComponent('&')+"v3=0"+encodeURIComponent('&')+"v4=0"+encodeURIComponent('&')+"v5=0";
+            const tweetmsg = "https://yeehaw-rose.vercel.app/api/share?v1=0"+encodeURIComponent('&')+"v2=0"+encodeURIComponent('&')+"v3=0"+encodeURIComponent('&')+"v4=0"+encodeURIComponent('&')+"v5=0"+encodeURIComponent('&')+"wallet="+String(address);
             return tweetmsg;
         }
         else{
-            const tweetmsg = "https://yeehaw-rose.vercel.app/api/share?v1="+String(bought)+encodeURIComponent('&')+"v2="+String(current)+encodeURIComponent('&')+"v3="+String((profit/bought)*100)+encodeURIComponent('&')+"v4="+String(profit/bought)+encodeURIComponent('&')+"v5="+String(profit);
+            const tweetmsg = "http://localhost:3000/api/share?v1="+String(bought)+encodeURIComponent('&')+"v2="+String(current)+encodeURIComponent('&')+"v3="+String((profit/bought)*100)+encodeURIComponent('&')+"v4="+String(profit/bought)+encodeURIComponent('&')+"v5="+String(profit)+encodeURIComponent('&')+"wallet="+String(address);
             return tweetmsg;
         }
 
